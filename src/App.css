@@ -1,12 +1,42 @@
+/* Define global CSS variables (custom properties) */
 :root {
-  --primary-color: #b197fc;
-  --secondary-color: #9b79ff;
+  --primary-color: #b197fc; /* Light purple - used as main theme color */
+  --secondary-color: #9b79ff; /* Slightly darker purple - for accents */
 }
 
+/* Text color utility class */
 .text-purple {
   color: var(--primary-color);
 }
 
+/* Background color utility class */
+.bg-color {
+  background-color: var(--primary-color);
+}
+
+/* Section title style */
+.section-title {
+  font-size: 4rem; /* Large font size for desktop view */
+}
+
+/* Styling for buttons inside a component with class "App" */
+.App .btn {
+  font-weight: 500; /* Medium-bold text weight for buttons */
+}
+
+/* Responsive styles for tablets and below (<=768px width) */
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem; /* Reduce title size for tablets */
+  }
+}
+
+/* Responsive styles for phones and below (<=576px width) */
+@media screen and (max-width: 576px) {
+  .section-title {
+    font-size: 2rem; /* Further reduce title size for small phones */
+  }
+}
 /*
 #root {
   max-width: 1280px;
