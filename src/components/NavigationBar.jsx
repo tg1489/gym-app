@@ -6,6 +6,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
+import { PurpleBtn } from './PurpleBtn';
+import '../index.css';
 
 export const NavigationBar = () => {
   return (
@@ -53,6 +55,14 @@ export const NavigationBar = () => {
               Contact
             </Nav.Link>
           </motion.ul>
+          <motion.div
+            className='ms-0 ms-lg-2 mt-3 mt-lg-0'
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <PurpleBtn btnTitle='Join Now' />
+          </motion.div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
