@@ -11,6 +11,7 @@
     "deploy": "pnpm build && gh-pages -d dist"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
